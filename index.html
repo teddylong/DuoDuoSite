@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>DuoDuo's EDC</title>
+<link rel="stylesheet" href="css/TimeCircles.css" />
+</head>
+
+<body>
+<h1 style="margin: 40px; font: 32px Microsoft Yahei; text-align: center;">DuoDuo's EDC</h1>
+
+
+
+<div id="someTimer1" class="someTimer" data-date="2014-10-30 00:00:00" style="width: 1000px; margin: 0 auto;"></div>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/TimeCircles.js"></script>
+<script>
+$(function(){
+	$('#someTimer1').TimeCircles({
+		time : {
+			Days: {
+				show: false,
+				text: "Days",
+				color: "#FC6"
+			},
+			Hours: {
+				show: false,
+				text: "Hours",
+				color: "#9CF"
+			},
+			Minutes: {
+				show: false,
+				text: "Minutes",
+				color: "#BFB"
+			},
+			Seconds: {
+				show: false,
+				text: "Seconds",
+				color: "#F99"
+			}
+		}
+	});
+});
+</script>
+
+</body>
+</html>
